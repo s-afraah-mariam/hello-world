@@ -2,13 +2,16 @@
 <html>
 <head>
     <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>📋 My Tasks (Read from SQLite)</h1>
-    <ul>
-        {% for task in tasks %}
-            <li>{{ task.title }}</li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <h1>📋 My Tasks (Read from SQLite)</h1>
+        <ul class="task-list">
+            {% for task in tasks %}
+                <li>{{ task.title }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>
