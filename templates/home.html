@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Flask</title>
+    <title>Task List</title>
 </head>
 <body>
-    <h1>Hello, World! 👋</h1>
-    <p>This is your first Flask page !</p>
+    <h1>📋 My Tasks (Read from SQLite)</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
