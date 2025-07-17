@@ -5,3 +5,6 @@
 
 2.Cloning this git repo 
     git clone https://github.com/s-afraah-mariam/hello-world.git
+
+3.Installing the requirements
+    pip install -r requirements.txt
